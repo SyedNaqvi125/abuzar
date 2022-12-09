@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #num1{
+        border-radius: 5px;
+        border: 2px solid black;
+        background-color: cadetblue;
+        color: antiquewhite; 
+    }
+    #num2{
+        border-radius: 5px;
+        border: 2px solid black;
+        background-color: cadetblue;
+        color: antiquewhite; 
+    }
+    #ans{
+        border-radius: 5px;
+        border: 2px solid black;
+        background-color: cadetblue;
+        color: antiquewhite; 
+    }
+</style>
+<body>
+    <input type="text" placeholder="Obtained" id="num1">
+    <br><br>
+    <input type="text" placeholder="Total" id="num2">
+    <br><br>
+    <button onclick="check()">PERCENTAGE %</button>
+    <br><br>
+    <input type="text" placeholder="Answer" id="ans">
+
+    <script>
+        function check(){
+            let a = parseInt(document.getElementById("num1").value);
+            let b = parseInt(document.getElementById("num2").value);
+            let c = (a / b)*100;
+            document.getElementById("ans").value = c;
+        }
+    </script>
+</body>
+</html>
